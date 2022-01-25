@@ -24,8 +24,8 @@
       "resources": [],
       "externalBin": [],
       "copyright": "",
-      "category": "DeveloperTool",
-      "shortDescription": "",
+      "category": "Education",
+      "shortDescription": "Read Opensource Programming Books",
       "longDescription": "",
       "deb": {
         "depends": [],
@@ -46,7 +46,12 @@
       }
     },
     "updater": {
-      "active": false
+      "active": true,
+      "endpoints": [
+          "https://mkproj.com/mkpb/releases/{{target}}/{{current_version}}"
+      ],
+      "dialog": true,
+      "pubkey": null
     },
     "allowlist": {
       "all": true
@@ -55,7 +60,7 @@
       {
         "title": "MKProject Books",
         "width": 800,
-        "height": 600,
+        "height": 800,
         "resizable": true,
         "fullscreen": false
       }
